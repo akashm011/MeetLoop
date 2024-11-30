@@ -104,7 +104,7 @@ const muteUnmute = () => {
 
 const setMuteButton = () => {
   const html = `
-    <i class="fas fa-microphone"></i>
+    <i class="ri-mic-line"></i>
     <span>Mute</span>
   `;
   document.querySelector(".main__mute_button").innerHTML = html;
@@ -112,7 +112,7 @@ const setMuteButton = () => {
 
 const setUnmuteButton = () => {
   const html = `
-    <i class="unmute fas fa-microphone-slash"></i>
+    <i class="ri-mic-off-fill"></i>
     <span>Unmute</span>
   `;
   document.querySelector(".main__mute_button").innerHTML = html;
@@ -131,7 +131,7 @@ const playStop = () => {
 
 const setStopVideo = () => {
   const html = `
-    <i class="fas fa-video"></i>
+    <i class="ri-video-on-line"></i>
     <span>Stop Video</span>
   `;
   document.querySelector(".main__video_button").innerHTML = html;
@@ -139,8 +139,12 @@ const setStopVideo = () => {
 
 const setPlayVideo = () => {
   const html = `
-  <i class="stop fas fa-video-slash"></i>
+ <i class="ri-video-off-line"></i>
     <span>Play Video</span>
   `;
   document.querySelector(".main__video_button").innerHTML = html;
+};
+
+const meetingEnd = () => {
+  window.location.href = "/home";
 };

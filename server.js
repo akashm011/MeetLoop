@@ -18,8 +18,8 @@ const {
 } = require("./middlewares/authentication");
 
 // connection to database
-connectMongoDB(process.env.Mongo_URL).then(() => {
-  // console.log("MongoDB Connected");
+connectMongoDB("mongodb://127.0.0.1:27017/ZoomData").then(() => {
+  console.log("MongoDB Connected");
 });
 
 //view engine
@@ -58,5 +58,5 @@ io.on("connection", (socket) => {
 
 // port listening
 server.listen(process.env.PORT || 3030, () => {
-  // console.log("server started at port:3030");
+  console.log("server started at port:3030");
 });
